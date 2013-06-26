@@ -1,0 +1,38 @@
+<% page = { "title" : "Reference App: underscore", "key": "Vendor Lib: underscore" } %>
+<% assets = { "css": [ "reference.css" ] } %>
+
+<div id="main" class="container">
+  <h1 class="font21 serif">underscore.js</h1>
+  <div class="row-fluid">
+    <section>
+      <p><a href="http://underscorejs.org">underscore.js</a> adds list, object, and functional programming utilities. It isn't available by default.  You have to load it explicitly like most other javascript.</p>
+    </section>
+    <section>
+      <h2>Using it in a Control</h2>
+      <p>It is easily added to a control using a require statement:</p>
+      <pre class="language-javascript" data-control="SyntaxHighlighter">
+var _ = require('underscore'); // customary to assign to underscore character
+
+console.log(_.pluck([
+  {name: 'larry'},
+  {name: 'curly'},
+  {name: 'moe'}], 'name')); // prints: ['larry', 'curly', 'moe']
+      </pre>
+    </section>
+    <section>
+      <h2>Using it Elsewhere</h2>
+      <p>Most of the time you can simply <tt>require</tt> the library.  But, in some circumstances you may need to <tt>ensure</tt> it first:</p>
+      <pre class="language-javascript" data-control="SyntaxHighlighter">
+require.ensure(['underscore'], function libsLoaded() {
+  var _ = require('underscore'); // from here it's the same as above
+
+  console.log(_.pluck([
+    {name: 'larry'},
+    {name: 'curly'},
+    {name: 'moe'}], 'name')); // prints: ['larry', 'curly', 'moe']
+});
+      </pre>
+    </section>
+  </div>
+  <div id="inline">Testing the inline content.</div>
+</div>

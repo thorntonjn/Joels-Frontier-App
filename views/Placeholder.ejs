@@ -1,0 +1,25 @@
+<% page = { "title" : "Reference App: Placeholder", "key": "JS Control: Placeholder" } %>
+<% assets = { "css": [ "reference.css" ] } %>
+
+<div id="main" class="container">
+  <h1 class="font21 serif">Placeholder</h1>
+  <div class="row-fluid">
+    <section>
+      <p>Placeholder is a wrapper for the <a href="https://github.com/mathiasbynens/jquery-placeholder">jQuery Placeholder</a> plugin. It simply makes the HTML5 placeholder attribute work in non-modern browsers. It's drop-dead simple to implement. Simply use a data-control of Placeholder on any input element that has a placeholder attribute and it will "just work". Since the plugin uses feature detection to decide whether to do anything, you'll need to examine this page in a non-modern browser.</p>
+      <h2>For Example</h2>
+      <form action="#">
+        <input data-control="Placeholder" type="text" placeholder="(Place)Hold me, please">
+        <textarea cols="30" rows="10">(Place)Hold me, please</textarea>
+      </form>
+    </section>
+    <section>
+      <h2>Code</h2>
+      <pre class="language-html" data-control="SyntaxHighlighter">
+&lt;form action="#"&gt;
+  &lt;input data-control="Placeholder" type="text" placeholder="(Place)Hold me, please"&gt;
+  &lt;textarea cols="30" rows="10"&gt;(Place)Hold me, please&lt;/textarea&gt;
+&lt;/form&gt;
+      </pre>
+    </section>
+  </div>
+</div>

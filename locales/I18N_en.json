@@ -1,0 +1,32 @@
+{
+  "i18n_title": "Internationalization (I18N)",
+  "i18n_client": "Client control internationalization is handled by the asset-manager and an example can be found in the <a href=\"SampleAssembly\">SampleAssembly</a> control",
+  "i18n_intro": "Frontier uses the <a href='https://github.com/fs-webdev/strong/'>Strong framework</a> to provide lookup of translated strings and an Express middleware for automatically detecting the browser locale. Strong provides the <code>i18n(key, options)</code> function for use in your templates to lookup the localized string. <div class='alert alert-info'><span class='label'>Tip</span> The i18n function is also aliased to <code>t(key, options)</code>, but <code>i18n()</code> is generally recommended to make it easier to see and find in your code.</div>",
+  "i18n_example_intro": "Each view has a file in <code>/locales/{pagename}_{locale}.json</code> with the localized strings in them. For example, if you had a view named samplePage.ejs, in the /locales directory you would also have a file named samplePage_en.json with the English version of your strings:",
+  "i18n_example": "{\n\"welcome_title\": \"Welcome To Our Application\",\n\"welcome_message\": \"Welcome, %{user.name}. We are glad you have come to our site!\",\n\"plural_message\": \"This string has %{plural_key}\"\n}",
+  "i18n_example_explanation": "For translation, you would addition files in /locales named samplePage_{locale}.json with the same set of strings, but translated in other languages.",
+  "route_usage_header": "Using the locale in a router or controller",
+  "route_usage_intro": "Until Frontier upgrades to Express 3, if you want to use the browser locale in a route or controller, you will need to import the Strong module into your application and call the middleware directly. Example:",
+  "route_usage_example": "var strong = require('strong');\n\n// .... inside your route or controller code\nvar locale = strong.localeHelper(req, res);\n// use the locale as you need to",
+  "override_locale_header": "Overriding the locale",
+  "override_locale_intro": "String automatically detects the browser locale and looks up that key for you. If you want to override that locale with your own, pass the locale to the <code>i18n()</code> function. Example:",
+  "override_locale_example": "&lt;ul&gt;\n\t&lt;li&gt;Non-translated string&lt;/li&gt;\n\t&lt;li&gt;<%- i18n('default_message') %>&lt;/li&gt;\n\t&lt;li&gt;<%- i18n('spanish_message', {'locale':['es-ES', 'es-MX', 'es', 'en']}) %>&lt;/li&gt;\n\t&lt;li&gt;<%- i18n('german_message', {'locale':'de'}) %>&lt;/li&gt;\n&lt;/ul&gt;",
+  "override_locale_explanation": "Below you can see what this code does. \"Non-translated string\" will never be localized, the 2nd string will be translated into the browser locale, the 3rd string will always be in Spanish (or English if the Spanish translations are not found), and the 4th string will always be in German",
+  "editor_integration_header": "Editor Integration",
+  "editor_integration_intro": "If you would like to use editor shortcuts to quickly insert the i18n function calls in your templates, here are some shortcuts for several popular editors:",
+  "editor_integration_webstorm": "WebStorm/Intellij IDEA",
+  "editor_integration_webstorm_example": "Open the preferences and search for the Live Templates section, press the + button to add a new Live Template, and fill in the fields like this:",
+  "editor_integration_sublime": "Sublime Text 2/Textmate",
+  "editor_integration_sublime_example": "If you know how to create a Sublime Text 2/Textmate template/macro, please put that example here.",
+  "editor_integration_other": "Other editors",
+  "editor_integration_other_example": "If you have a favorite editor not listed here, please add your setup here.",
+  "editor_integration_example": "var strong = require('strong');\n\n// .... inside your route or controller code\nvar locale = strong.localeHelper(req, res);\n// use the locale as you need to",
+  "welcome_message": "Welcome, %{user.name}. Welcome to %{appName}!",
+  "plural_message": {
+    "one": "This message has 1 widget.",
+    "other": "This message has %{count} widgets."
+  },
+  "default_message": "Default Message",
+  "spanish_message": "Spanish Message",
+  "german_message": "German Message"
+}

@@ -1,0 +1,1 @@
+This directory is reserved for documenting code written in this repository. This follows the pattern Node.js uses. See the [node documentation generation tool](https://github.com/joyent/node/tree/master/tools/doc).

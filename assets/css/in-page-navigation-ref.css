@@ -1,0 +1,29 @@
+/* InPageNavigation */
+.in-page-navigation-ref a:link,
+.in-page-navigation-ref a:visited,
+.in-page-navigation-ref a:active { color: #5a7751; }
+.in-page-navigation-ref a:hover { color: #243b1d; }
+
+.in-page-navigation-ref .step-list { font-size: 16px; margin: 0 -41px; padding: 0; text-align: center; }
+.in-page-navigation-ref .step-list ul { margin: 0 1px; padding: 0; width: 978px; }
+.in-page-navigation-ref .step-list li { display: inline-block; margin: 35px 40px 44px; vertical-align: top; zoom: 1; *display: inline}
+.in-page-navigation-ref .step-list li:first-child { margin-left: 36px; }
+.in-page-navigation-ref .step-list li img { display: block; margin: 3px auto 0; }
+.in-page-navigation-ref .step-list li:first-child img { margin-top: 1px; }
+.in-page-navigation-ref .step-list a span { border: 0px solid #868686; box-shadow: 0 0 1px 1px rgba(134, 134, 134, .4) inset; display: block; height: 78px; margin-bottom: 16px; padding: 13px 0 0; width: 112px; background: -moz-linear-gradient(top, #fff, #ecebe7); background: -ms-linear-gradient(top, #fff, #ecebe7); background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ecebe7)); background: -webkit-linear-gradient(top, #fff, #ecebe7); background: -o-linear-gradient(top, #fff, #ecebe7); background: linear-gradient(top, #fff, #ecebe7); background-repeat: repeat-y; filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ecebe7', GradientType=0); -moz-border-radius: 11px; -webkit-border-radius: 11px; border-radius: 11px; }
+.in-page-navigation-ref .step-list a:hover span { background-color: #ebeae6; text-decoration: none; background: -moz-linear-gradient(top, #fff, #dcd9d5); background: -ms-linear-gradient(top, #fff, #dcd9d5); background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#dcd9d5)); background: -webkit-linear-gradient(top, #fff, #dcd9d5); background: -o-linear-gradient(top, #fff, #dcd9d5); background: linear-gradient(top, #fff, #dcd9d5); background-repeat: repeat-y; filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcd9d5', GradientType=0); }
+.in-page-navigation-ref .step-list a,
+.in-page-navigation-ref .step-list a:hover { text-decoration: none; }
+.in-page-navigation-ref .step-list a b { font-weight: normal; }
+.in-page-navigation-ref .step-list a[href="#step2"] img { position: relative; top: 6px; }
+.in-page-navigation-ref .step-list a[href="#step3"] img { position: relative; top: -4px; }
+/*Needed for InPageNavigation control*/
+.in-page-navigation-ref { position: relative; }
+.in-page-navigation-ref .step-nav { border-top-color: #21341b; display: none; font-size: 16px; margin-left: -41px; }
+.in-page-navigation-ref .step-nav a { width: 195px; }
+/*This width allows for 4 items*/
+
+.in-page-navigation-ref .step { margin: 63px 0 20px; padding-top: 40px; }
+
+.in-page-navigation-ref .examples { background: url('inPageNavigation/steps-gradient.png') center top no-repeat; margin-top: 0; padding-top: 31px; }
+.in-page-navigation-ref .wrapup { padding-bottom: 260px; }

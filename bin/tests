@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# fail fast
+set -o errexit
+set -o pipefail
+
+./node_modules/frontier-build-tools/testScripts/run-mocha-local
+
+TARGET_BROWSER="PhantomJS" ./node_modules/.bin/karma start test/karma.conf.js --single-run

@@ -1,0 +1,50 @@
+/* About FamilySearch */
+@font-face { font-family: 'LeagueGothicWeb'; src: url('webfonts/League_Gothic-webfont.eot'); src: url('webfonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/League_Gothic-webfont.woff') format('woff'), url('webfonts/League_Gothic-webfont.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+
+/**
+ * All of the styles in this stylesheet should just be to make the reference pages look correct.
+ * Styles required to make a module work correctly should never be placed in here since those
+ * styles won't necessarily be found on the host page of the module. 
+ */
+ 
+.inProgress { color: #ccc; }
+
+/* StickyHeader sample styles */
+.sticky-header .sampleHeader { background-color: #0f0; }
+
+/* Grid sample styles -- js module */
+.grid h1.sticky-prepend { padding: 10px 0; margin: 0; }
+.grid .stickyWrapper .sticky { background-color: #fff; }
+.grid table { width: 100%; }
+.grid thead th:nth-of-type(odd) { background-color: #4B76B0; }
+
+/* Callout sample styles */
+.callout { height: 800px; }
+.callout .target { background-color: #0ff; width: 200px; height: 20px; position: absolute; }
+.callout .my-callout { width: 100px; height: 100px; }
+.callout p { margin: 0; }
+
+/* css-grids */
+.css-layout .example h3 { margin: 20px 0 5px 35px; font-weight: bold; }
+.css-layout .example div { border: 1px solid #ccc; }
+.css-layout .example div div { background: #eee; } 
+
+/* css-buttons */
+.css-buttons p { margin-bottom: 15px; }
+
+/* experiments */
+.experiments blockquote { margin: 0 30px 15px 30px; padding: 8px; background-color: beige; }
+.experiments blockquote.on { background-color: chartreuse; }
+
+/* ToggleClass */
+.toggle-class .test { width: 200px; background: red; color: #fff; }
+.toggle-class .test.on { background: blue; }
+
+/* Webfont Examples */
+.css-type li strong { display: block; font-family: LeagueGothicWeb, "League Gothic", sans-serif; font-size: 40px; font-weight: normal; line-height: 40px; margin-bottom: 9px; }
+
+/* I18N */
+.i18n .alert {
+  margin-left: 40px;
+  margin-right: 40px;
+}

@@ -1,0 +1,21 @@
+<% page = { "title" : "Reference App: SmoothScroll", "key": "JS Control: SmoothScroll" } %>
+<% assets = { "css": [ "reference.css", "smoothscroll.css" ] } %>
+
+<div id="main" class="container">
+  <h1 class="font21 serif">SmoothScroll</h1>
+  <div class="row-fluid">
+    <section>
+      <p>SmoothScroll is a wrapper for the <a href="https://github.com/kswedberg/jquery-smooth-scroll/">jQuery SmoothScroll</a> plugin. You attach it to a link or series of links and if they are pointing to inline sections of the page, clicking on them will animate the scroll from the link to the destination.</p>
+      <h2>For Example</h2>
+      <p data-control="SmoothScroll" data-config='{ "speed" : 4000 }'><a href="#target">Scrollin', scrollin', scrollin'…</a> (super-slow so you can take in all the majesty)</p>
+      <div id="target">…keep those pages scrollin'.</div>
+    </section>
+    <section>
+      <h2>Code</h2>
+      <pre class="language-html" data-control="SyntaxHighlighter">
+&lt;p data-control="SmoothScroll" data-config='{ "speed" : 4000 }'&gt;&lt;a href="#target"&gt;Scrollin', scrollin', scrollin'…&lt;/a&gt;&lt;/p&gt;
+&lt;div id="target"&gt;…keep those pages scrollin'.&lt;/div&gt;
+      </pre>
+    </section>
+  </div>
+</div>

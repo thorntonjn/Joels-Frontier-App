@@ -1,0 +1,30 @@
+<% page = { "title" : "CSS: Layouts", "key": "css-Layouts" } %>
+<% assets = { "css": [ "reference.css" ] } %>
+
+<div id="main" class="css-layout container" data-control="SyntaxHighlighter">
+  
+  <h1 class="font21 serif">Core Markup &amp; Layouts</h1>
+  
+  <ul class="nav nav-pills">
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#example">Examples</a></li>
+  </ul>
+  
+  <section class="basic">
+  
+    <h1 id="usage" class="font18 serif">Usage</h1>
+
+    <p>Each page on familysearch should use the following core piece of markup. It is assumed that all pages will have this id="main" on them.</p>
+    <pre class="language-html">
+      &lt;div id="main"&gt;
+        &lt;!-- All body content goes here--&gt;
+      &lt;/div&gt;
+    </pre>
+    <p>By default id="main" comes with zero padding. If you'd like add padding a default set of padding to the container without useing a layout add the class="no-layout"
+    <pre class="language-html">
+      &lt;div id="main" class="container"&gt;
+        &lt;!-- All body content goes here--&gt;
+      &lt;/div&gt;
+    </pre>  
+  </section>
+</div>
