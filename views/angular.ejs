@@ -1,0 +1,36 @@
+<% page = { "title" : "Reference App: newPage", "key": "New Page: newPage" } %>
+<% assets = { "css": [ "reference.css", "new-page.css" ] } %>
+
+<!--<head>-->
+    <!--<script src="http://code.angularjs.org/angular-1.0.0rc3.min.js"></script>-->
+<!--</head>-->
+
+<% assets = { "css": [ "todo.css", "bootstrap.css" ],
+"js":[ "todo.js", "angular-1.0.3.js", "underscore.js" ]
+} %>
+
+<div id="main" class="container" ng-app>
+  <h1 class="font21 serif">Creating a TODO List with angular !</h1>
+  <div class="row-fluid">
+
+    <div >
+        <h2>Total todos: {{getTotalTodos()}}</h2>
+        <ul class="unstyled">
+            <li data-ng-repeat="todo in todos">
+                <input type="checkbox" data-ng-model="todo.done">
+                <span class="done-{{todo.done}}">{{todo.text}}</span>
+
+            </li>
+        </ul>
+        <form class="form-horizontal">
+            <input type="text" data-ng-model="formTodoText" ng-model-instant>
+            <button class="btn" data-ng-click="addTodo()"><i class="icon-plus"></i>Add</button>
+        </form>
+        <button class="btn-large" data-ng-click="clearCompleted()"><i class="icon-trash"></i>Clear</button>
+    </div>
+
+  </div>
+
+
+
+</div>

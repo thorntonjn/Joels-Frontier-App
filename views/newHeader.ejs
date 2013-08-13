@@ -1,0 +1,33 @@
+<% page = { "title" : "Reference App: newPage", "key": "New Page: newPage" } %>
+<% assets = { "css": [ "reference.css", "new-page.css" ] } %>
+
+<div id="main" class="container">
+  <h1 class="font21 serif">Creating a New Page is as easy as 1, 2, 3 !</h1>
+  <div class="row-fluid">
+    <section>
+      <p>Just follow these three simple steps. </p>
+      <ol>
+          <li>create a new template to your views directory </li>
+          <li>add an additional controller or route to your controller directory or controller/routes.js file</li>
+          <li>modify it to your liking</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Create a New Template</h2>
+      <p>Reference Page and Assets at the top:</p>
+      <p>Add HTML as normal beginning with the main div:</p>
+      <pre class="language-javascript" data-control="SyntaxHighlighter">
+// 'page = { "title" : "Reference App: SmoothScroll", "key": "JS Control: SmoothScroll" }'
+// 'assets = { "css": [ "reference.css", "smoothscroll.css" ] }'
+      </pre>
+    </section>
+    <section>
+      <h2>Use partials and other frontier controls</h2>
+      <%- partial('partials/_new-page.ejs') %>
+
+    </section>
+  </div>
+  <div id="inline">Here is inline content.</div>
+  <div>Test adding an external link to underscore.js<a href="http://underscorejs.org">underscore.js</a> </div>
+  <div class="my-familytree-image">Here is an image added to assets/img folder </div>
+</div>
