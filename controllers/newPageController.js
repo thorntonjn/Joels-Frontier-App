@@ -19,10 +19,19 @@ module.exports = function(app) {
 
   });
 
+  app.get('/journeyman', function(req, res) {
+    console.log("new header layout");
+    // app.set("view options", {layout: "journeymanlayout.ejs"});
+    res.render( 'journeymanlayout' );
+    
+  })
+
+
   app.get('/:page', function(req, res){
     console.log(":page-",req.params.page);
     res.render( req.params.page );
   });
+
 
 
     

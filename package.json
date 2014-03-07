@@ -4,27 +4,27 @@
   "private": true,
   "main": "./app.js",
   "dependencies": {
-    "async": ">= 0.1.12",
-    "shared-ui": "git+https://github.com/fs-webdev/shared-ui.git",
+    "async": "~0.2.10",
     "woodruff": "git+https://github.com/fs-webdev/woodruff.git",
+    "theme-engage": "git+https://github.com/fs-webdev/theme-engage.git",
     "frontier-build-tools": "git+https://github.com/fs-webdev/frontier-build-tools.git",
-    "startup": "~0.1.8",
     "gadgets-shared": "git+https://github.com/fs-webdev/gadgets-shared.git",
-    "simple-http-proxy": "~0.5.0"
+    "simple-http-proxy": "~0.5.10",
+    "startup": "~0.3.0",
+    "nodetime": "~0.8.15"
   },
   "devDependencies": {
-    "mocha": "~1.8.1",
+    "mocha": "~1.8.2",
     "strong": "git+https://github.com/fs-webdev/strong.git",
-    "chai": "1.6.x",
-    "karma": "0.8.x"
+    "istanbul": "~0.2.4",
+    "xunit-file": "0.0.5",
+    "expect.js": "~0.2.0"
   },
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+    "node": "0.10.x"
   },
   "scripts": {
     "test": "bin/tests",
-    "test-ci": "run-mocha-ci",
-    "postinstall": "node_modules/frontier-build-tools/node_modules/coffee-script/bin/cake assets:deploy"
+    "test-ci": "run-mocha-ci"
   }
 }
